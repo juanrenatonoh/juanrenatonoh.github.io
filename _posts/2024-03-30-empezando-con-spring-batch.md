@@ -271,12 +271,18 @@ Al ejecutar un batch en el esquema de Spring Batch existen las respectivas tabla
 
 De acuerdo al requerimiento se necesita un Api Rest por lo que ahora incluiremos la dependencia, Spring Web al pom de nuestro proyecto. 
 
+~~~
+
 `<dependency>`  
 `<groupId>org.springframework.boot</groupId>`  
 	`<artifactId>spring-boot-starter-web</artifactId>`  
 `</dependency>`
 
+~~~
+
 Ahora crearemos nuestra clase JobRest con nuestros servicios de ejecutar y consultar . 
+
+~~~
 
 `import java.text.ParseException;`  
 `import java.text.SimpleDateFormat;`  
@@ -395,14 +401,19 @@ Ahora crearemos nuestra clase JobRest con nuestros servicios de ejecutar y consu
 
 `}`
 
+~~~
+
 Y la última modificación en el código es incluir la anotación @EnableBatchProcesing en la configuración del Job .
+
+~~~
 
 `//Indica al contedor de beans de spring que la gestione`  
 `@Configuration`  
 `@EnableBatchProcessing`   
 `public` `class` `DirectionsSincronitationJob` `{`
 
- 
+ ~~~
+
 
 ¡ Ahora es tiempo de ejecutar y probar los servicios \!
 
@@ -416,11 +427,15 @@ Lo primero que observamos ahora es que al levantar la aplicación el Job no se e
 
 Para lanzar el job realicemos la siguiente petición al API . 
 
+~~~
+
 `curl` `--location` `--request` `POST` `'http://localhost:8080/job/ejecutar'` `\`  
 `--header` `'Content-Type:` `application/json'` `\`  
 `--data-raw` `'{`  
  `"fecha"` `:` `"2023-10-16"`  
 `}'`
+
+~~~
 
 Observamos que como resultado obtenemos un JobId de respuesta con el cual podemos  consultar  en el modelo la información de ejecución.
 
@@ -480,17 +495,26 @@ De acuerdo al requerimiento ahora necesitaremos importan las direcciones del csv
 
 Ahora incluiremos Spring Data JPA en el pom.xml  
  
+ ~~~
 
 `<dependency>`  
 `<groupId>org.springframework.boot</groupId>`  
 	`<artifactId>spring-boot-starter-data-jpa</artifactId>`  
 `</dependency>`
 
+~~~
+
 ¡ Es hora de modelar los datos de entrada y salida\! . Primero crearemos la clase DirectionRecord que nos servirá para vaciar las filas del csv . 
+
+~~~
 
 `public` `record`  `DirectionRecord`  `(` `String` `codigoPostal,String` `asentamiento,String` `tipoAsentamiento,String` `municipio` `){}`
 
+~~~
+
 Y ahora creamos la entidad Direction 
+
+~~~
 
 `@Entity`  
 `@Table(name = "Direction")`  
@@ -550,7 +574,11 @@ Y ahora creamos la entidad Direction
 	`}`  
 `}`
 
+~~~
+
 Con estas clases ya es posible  crear nuestro Step que se encargará de la importación de los registros . Para esto incluimos los siguientes beans en la clase DirectionsSincronitationJob.
+
+~~~
 
 `/***`  
 	 `* Paso generado para la importacion de las direcciones`  
@@ -624,7 +652,11 @@ Con estas clases ya es posible  crear nuestro Step que se encargará de la impor
 		`.build();`  
 	`}`
 
+~~~
+
 Por último agregamos el nuevo Step en el Job
+
+~~~
 
 `//Job que representa el batch en el contedor`  
 	`@Bean`  
@@ -634,6 +666,8 @@ Por último agregamos el nuevo Step en el Job
 		`.next(importDirections)//Nueva Tarea importacion`  
 		`.build();`  
 	`}`
+
+~~~
 
 ¡ Ahora es tiempo de ejecutar y probar los servicios \! (Recuerda que la ejecución del servicio lo vimos en la práctica 2\)
 
