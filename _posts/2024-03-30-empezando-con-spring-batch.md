@@ -72,6 +72,8 @@ Los valores importantes a considerar es:
 
 Si se ha escogido como gestor de dependencias maven el pom se observa así : 
 
+~~~
+
 `<parent>`  
 		`<groupId>org.springframework.boot</groupId>`  
 		`<artifactId>spring-boot-starter-parent</artifactId>`  
@@ -109,9 +111,12 @@ Si se ha escogido como gestor de dependencias maven el pom se observa así :
 		`</dependency>`  
 	`</dependencies>`
 
+~~~
+
 Ahora con estas simples configuraciones ya podemos crear nuestro primer batch, para  esto agregaremos la siguiente clase  : 
 
-   
+~~~
+
 `package` `com.jrnoh.demo.em.sb;`
 
 `import` `org.slf4j.Logger;`  
@@ -161,7 +166,11 @@ Ahora con estas simples configuraciones ya podemos crear nuestro primer batch, p
 
 `}`
 
+~~~
+
 Y tambien las siguientes propiedades en el application.properties
+
+~~~
 
 `#Conexion a la base de datos` 
 
@@ -173,6 +182,8 @@ Y tambien las siguientes propiedades en el application.properties
 
 `# Crear el esquema de bd spring batch  al arrancar el proyecto`  
 `spring.batch.jdbc.initialize-schema=ALWAYS`
+
+~~~
 
 Ahora ya podemos ejecutar la aplicación  (Si es de su preferencia la terminal ejecute mvn spring-boot:run ) . 
 
