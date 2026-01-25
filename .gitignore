@@ -1,0 +1,39 @@
+# =========================
+# Jekyll
+# =========================
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# =========================
+# Bundler / Ruby
+# =========================
+.bundle/
+vendor/bundle/
+vendor/cache/
+Gemfile.lock
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Node (si llegas a usarlo)
+# =========================
+node_modules/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.swp
