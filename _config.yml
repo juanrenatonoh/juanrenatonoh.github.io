@@ -2,3 +2,4 @@ title: Juan Renato Noh
 description: Blog y sitio personal sobre tecnología, desarrollo y criterio profesional
 theme: jekyll-theme-minimal
 markdown: kramdown
+excerpt_separator: "<!--more-->"

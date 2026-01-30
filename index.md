@@ -1,13 +1,18 @@
 ---
 layout: default
+title: Blog
 ---
 
-# Juan Renato Noh
+{% for post in site.posts %}
+<article class="post-preview">
+  <h2>
+    <a href="{{ post.url | relative_url }}">
+      {{ post.title }}
+    </a>
+  </h2>
 
-Ingeniero de software | Backend | Tecnología y criterio profesional
-
-Bienvenido a mi sitio personal.  
-Aquí comparto ideas, análisis y experiencias sobre tecnología, desarrollo de software y crecimiento profesional.
-
-👉 [Ir al blog](/blog)
-
+  <p class="post-excerpt">
+    {{ post.excerpt }}
+  </p>
+</article>
+{% endfor %}
