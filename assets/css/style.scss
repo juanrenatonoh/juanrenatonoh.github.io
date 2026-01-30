@@ -63,6 +63,64 @@ a {
   }
 }
 
+/* --- Estilos para el Footer --- */
+
+.site-footer {
+  border-top: 1px solid #e5e7eb; // Borde gris muy suave
+  margin-top: 4rem;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: #6b7280; // Texto de footer más suave
+}
+
+.footer-container {
+  max-width: 800px; // Ancho similar al contenido principal
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; // Separa la bio de los iconos
+  align-items: center;
+  flex-wrap: wrap; // Para que baje a la siguiente línea en móvil
+}
+
+.footer-bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-name {
+  font-weight: 700;
+  color: #1f2937; // Un poco más oscuro para el nombre
+  margin-bottom: 0.25rem;
+}
+
+.footer-tagline {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem; // Espacio entre iconos
+}
+
+.footer-socials a {
+  color: #6b7280;
+  transition: color 0.2s;
+  &:hover {
+    color: #1f2937; // Color al pasar el mouse
+    text-decoration: none;
+  }
+}
+
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+
+
+
 
 
 
