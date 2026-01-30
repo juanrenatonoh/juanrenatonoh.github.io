@@ -3,15 +3,21 @@
 
 @import "{{ site.theme }}";
 
-header {
-    float: none !important;
-    position: relative !important;
+.wrapper > header {
+    float: none;
+    position: relative;
+    padding-bottom: 2rem;
 }
 
-section {
-    float: none !important;
+.wrapper > section {
+    float: none;
+    display: flow-root;
 }
 
+.wrapper > footer {
+    position: relative;
+    margin-top: 2rem;
+}
 /*
 h1 {
     font-family: 'Playfair Display', serif;
