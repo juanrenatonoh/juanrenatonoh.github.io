@@ -1,4 +1,3 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem "jekyll", "~> 4.4"
-gem "jekyll-theme-minimal", "~> 0.2.0"
+gem "github-pages", group: :jekyll_plugins
