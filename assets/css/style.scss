@@ -4,6 +4,10 @@
 @import "{{ site.theme }}";
 
 
+/***
+Fuentes
+**/
+
 // 1. Importar Inter desde Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 // Opcional: Una fuente mono para tu código (muy tech)
@@ -63,23 +67,98 @@ a {
   }
 }
 
-/* --- Estilos para el Footer --- */
-
-.site-footer {
-  border-top: 1px solid #e5e7eb; // Borde gris muy suave
-  margin-top: 4rem;
-  padding-top: 2rem;
-  font-size: 0.9rem;
-  color: #6b7280; // Texto de footer más suave
+/* Reset de la cabecera del tema Minimal */
+header {
+  float: none !important;
+  width: 100% !important;
+  position: relative !important;
+  margin: 0 0 60px 0 !important;
 }
 
-.footer-container {
-  max-width: 800px; // Ancho similar al contenido principal
-  margin: 0 auto;
+/* Diseño de la nueva cabecera */
+.main-header {
+  padding: 30px 0;
+  border-bottom: 1px solid #f0f0f0; /* Línea divisoria muy sutil */
+}
+
+.nav-container {
   display: flex;
-  justify-content: space-between; // Separa la bio de los iconos
+  justify-content: space-between; /* Nombre a la izq, links a la der */
   align-items: center;
-  flex-wrap: wrap; // Para que baje a la siguiente línea en móvil
+  max-width: 800px; /* Alineado con el ancho del contenido */
+  margin: 0 auto;
+}
+
+.nav-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000 !important;
+  text-decoration: none;
+  letter-spacing: -0.03em; /* Look premium */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #666 !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #000 !important;
+    text-decoration: none;
+  }
+}
+
+
+/* Ajuste para que el contenido no se pegue arriba */
+.wrapper {
+  padding-top: 0 !important;
+}
+
+.wrapper {
+  max-width: 800px !important; /* El estándar de lectura de blogs top */
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
+section {
+  width: 100% !important;
+  float: none !important;
+}
+
+
+/* --- Estilos para el Footer --- */
+
+footer {
+  width: 100% !important;    /* Quitamos los 270px */
+  float: none !important;    /* Quitamos el float: left */
+  position: relative !important; /* Quitamos el fixed (para que no flote sobre el texto) */
+  bottom: auto !important;   /* Quitamos el bottom: 50px */
+  margin-top: 80px !important; /* Espacio real entre el texto y el footer */
+  left: 0 !important;
+}
+
+/* Aplicamos el diseño minimalista de nuevo sobre el reset */
+.site-footer {
+  display: block;
+  clear: both; // Asegura que nada se le encime
+  padding: 40px 0;
+  max-width: 100%; 
+  border-top: 1px solid #eaeaea; // La línea sutil superior
+}
+
+/* Ajuste para que los iconos no se amontonen */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .footer-bio {
@@ -119,23 +198,3 @@ a {
   font-size: 0.8rem;
 }
 
-
-
-
-
-
-.wrapper > header {
-    float: none;
-    position: relative;
-    padding-bottom: 2rem;
-}
-
-.wrapper > section {
-    float: none;
-    display: flow-root;
-}
-
-.wrapper > footer {
-    position: relative;
-    margin-top: 2rem;
-}
