@@ -199,6 +199,82 @@ footer {
 }
 
 
+/***Estilos para el listado de posts**/
+
+.posts-container {
+  margin-top: 50px;
+}
+
+.section-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #888;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-item {
+  border-bottom: 1px solid #f0f0f0;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.post-link {
+  display: flex;
+  align-items: baseline;
+  padding: 15px 0;
+  text-decoration: none !important;
+  gap: 20px;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.6; /* Efecto sutil de desvanecimiento al pasar el mouse */
+  }
+}
+
+.post-date {
+  font-family: var(--code-font); /* La fuente JetBrains Mono que configuramos */
+  font-size: 0.85rem;
+  color: #999;
+  min-width: 100px; /* Alineación perfecta de las fechas */
+}
+
+.post-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  flex-grow: 1;
+}
+
+.post-reading-time {
+  font-size: 0.8rem;
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* Ajuste para móviles: si la pantalla es muy chica, apilamos la fecha */
+@media (max-width: 500px) {
+  .post-link {
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 0;
+  }
+  
+  .post-date {
+    font-size: 0.75rem;
+  }
+}
+
+
 
 /* Ajustes para Móviles */
 @media (max-width: 600px) {
@@ -230,5 +306,57 @@ footer {
   /* Ajuste de márgenes del contenido en móvil */
   .wrapper {
     padding: 0 15px !important;
+  }
+}
+
+/* Estilo para el post destacado */
+.featured-post {
+  padding: 40px 0;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #a0a0a0;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.featured-title {
+  font-size: 2.2rem;
+  margin: 10px 0;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+    &:hover { opacity: 0.7; }
+  }
+}
+
+.featured-excerpt {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+/* Ajuste móvil para el destacado */
+@media (max-width: 600px) {
+  .featured-title {
+    font-size: 1.6rem;
+  }
+  .featured-excerpt {
+    font-size: 1rem;
   }
 }
