@@ -198,3 +198,37 @@ footer {
   font-size: 0.8rem;
 }
 
+
+
+/* Ajustes para Móviles */
+@media (max-width: 600px) {
+  
+  .nav-container {
+    flex-direction: column; /* Apilamos logo arriba y links abajo */
+    align-items: flex-start; /* Alineado a la izquierda para look limpio */
+    gap: 15px;
+  }
+
+  .nav-logo {
+    white-space: nowrap;    /* Evita que tu nombre se rompa en 3 líneas */
+    font-size: 1.15rem;     /* Un poco más pequeño para que quepa bien */
+    display: block;
+    width: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 1rem;              /* Menos espacio entre links en móvil */
+    justify-content: flex-start;
+    padding-bottom: 5px;
+  }
+
+  .nav-item {
+    font-size: 0.85rem;     /* Texto más compacto */
+  }
+
+  /* Ajuste de márgenes del contenido en móvil */
+  .wrapper {
+    padding: 0 15px !important;
+  }
+}
