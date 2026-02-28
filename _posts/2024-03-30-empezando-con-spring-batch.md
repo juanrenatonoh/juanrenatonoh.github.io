@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Empezando con Spring Batch"
+date: 2024-03-30
+author: Juan Renato Noh
+---
+
 Este artículo está diseñado para aprender los fundamentos de Spring Batch y  construir una aplicación utilizando la versión 5 la cual es la actual al momento de publicar esta información. 
 
 A lo largo de la lectura se incluyeron ejercicios  prácticos que  buscan reafirmar los conocimientos de la teoría explicada , de igual manera al final al finalizar cada práctica comparto la ubicación del repositorio con el ejercicio completo. 
