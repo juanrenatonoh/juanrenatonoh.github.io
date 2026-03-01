@@ -92,16 +92,6 @@ header {
   margin: 0 0 60px 0 !important;
 }
 
-.wrapper {
-  padding-top: 0 !important;
-}
-
-.wrapper {
-  max-width: 800px !important; /* El estándar de lectura de blogs top */
-  margin: 0 auto !important;
-  padding: 0 20px !important;
-}
-
 section {
   width: 100% !important;
   float: none !important;
@@ -117,12 +107,33 @@ footer {
   left: 0 !important;
 }
 
-/**
-Hide the author in post section
-**/
+/** Hide the author in post section **/
 section p.view {
     visibility: hidden !important; 
 }
+
+/** 
+
+Init "default" layout
+
+**/
+
+.wrapper {
+  padding-top: 0 !important;
+}
+
+.wrapper {
+  max-width: 800px !important; /* El estándar de lectura de blogs top */
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
+/** 
+
+End "default" layout
+
+**/
+
 
 
 /* 
