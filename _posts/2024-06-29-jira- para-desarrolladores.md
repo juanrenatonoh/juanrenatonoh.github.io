@@ -2,6 +2,7 @@
 layout: post
 title: Jira para desarrolladores
 date: 2024-06-29
+author: Juan Renato Noh
 ---
 
 En el mundo del desarrollo de software, la gestión eficiente de proyectos es clave para el éxito. En este contexto, Jira, desarrollada por Atlassian, se ha convertido en una herramienta imprescindible para los equipos de desarrollo.
