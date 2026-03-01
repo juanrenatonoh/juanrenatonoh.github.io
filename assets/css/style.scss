@@ -261,6 +261,19 @@ footer {
   font-weight: 400;
 }
 
+
+/**
+ * Oculta el botón "El by author"
+
+section p.view {
+    display: none !important;
+} */
+section p.view {
+    visibility: hidden !important; 
+    /* A diferencia de display:none, visibility:hidden oculta el texto 
+       pero el espacio que ocupa el párrafo se mantiene intacto. */
+}
+
 /* Ajuste para móviles: si la pantalla es muy chica, apilamos la fecha */
 @media (max-width: 500px) {
   .post-link {
