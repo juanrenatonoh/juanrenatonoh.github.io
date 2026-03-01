@@ -1,37 +1,46 @@
 ---
 ---
 
+/* 
+======================
+   Imports
+====================== 
+*/
+
 @import "{{ site.theme }}";
-
-
-/* ======================
-   Fonts
-   ====================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
+/* 
+======================
+   Fonts
+====================== 
+*/
+
+
+
 :root {
   --primary-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --code-font: 'JetBrains Mono', monospace;
-  --text-color: #1a1a1a; // Un gris casi negro, más suave que el negro puro
+  --text-color: #1a1a1a;
   --light-gray: #666666;
 }
 
 body {
   font-family: var(--primary-font);
   color: var(--text-color);
-  line-height: 1.65; // Espaciado crucial para el look minimalista
+  line-height: 1.65; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.011em; // Inter luce mejor con un tracking ligeramente cerrado
+  letter-spacing: -0.011em; 
 }
 
 h1, h2, h3, h4 {
   font-family: var(--primary-font);
   color: #000;
   font-weight: 700;
-  letter-spacing: -0.022em; // Los títulos deben verse "apretados" y sólidos
+  letter-spacing: -0.022em; 
   margin-top: 2em;
 }
 
@@ -40,23 +49,27 @@ h1 {
   font-size: 2.5rem;
 }
 
-/* Estilo para los metadatos (fecha, tiempo de lectura) */
 .post-meta {
   color: var(--light-gray);
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-/* Mejora de los bloques de código */
+/**
+Code style
+**/
 code, pre {
   font-family: var(--code-font) !important;
   font-size: 0.9em;
   border-radius: 6px;
 }
 
-/* El toque final: enlaces elegantes */
+/**
+Links  
+**/
+
 a {
-  color: #007aff; // Azul tipo Apple
+  color: #007aff;
   text-decoration: none;
   transition: opacity 0.2s;
   &:hover {
@@ -73,17 +86,22 @@ header {
   margin: 0 0 60px 0 !important;
 }
 
-/* Diseño de la nueva cabecera */
+/* 
+====================
+Layout
+==================== 
+*/
+
 .main-header {
   padding: 30px 0;
-  border-bottom: 1px solid #f0f0f0; /* Línea divisoria muy sutil */
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between; /* Nombre a la izq, links a la der */
+  justify-content: space-between; 
   align-items: center;
-  max-width: 800px; /* Alineado con el ancho del contenido */
+  max-width: 800px; 
   margin: 0 auto;
 }
 
@@ -92,7 +110,7 @@ header {
   font-weight: 700;
   color: #000 !important;
   text-decoration: none;
-  letter-spacing: -0.03em; /* Look premium */
+  letter-spacing: -0.03em; 
 }
 
 .nav-links {
@@ -113,8 +131,6 @@ header {
   }
 }
 
-
-/* Ajuste para que el contenido no se pegue arriba */
 .wrapper {
   padding-top: 0 !important;
 }
@@ -131,27 +147,35 @@ section {
 }
 
 
-/* --- Estilos para el Footer --- */
-
 footer {
-  width: 100% !important;    /* Quitamos los 270px */
-  float: none !important;    /* Quitamos el float: left */
-  position: relative !important; /* Quitamos el fixed (para que no flote sobre el texto) */
-  bottom: auto !important;   /* Quitamos el bottom: 50px */
-  margin-top: 80px !important; /* Espacio real entre el texto y el footer */
+  width: 100% !important;    
+  float: none !important;   
+  position: relative !important; 
+  bottom: auto !important;   
+  margin-top: 80px !important; 
   left: 0 !important;
 }
 
-/* Aplicamos el diseño minimalista de nuevo sobre el reset */
+/* 
+====================
+Componentes
+==================== 
+*/
+
+/***
+
+init footer.html
+
+***/
+
 .site-footer {
   display: block;
-  clear: both; // Asegura que nada se le encime
+  clear: both;
   padding: 40px 0;
   max-width: 100%; 
-  border-top: 1px solid #eaeaea; // La línea sutil superior
+  border-top: 1px solid #eaeaea; 
 }
 
-/* Ajuste para que los iconos no se amontonen */
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -166,7 +190,7 @@ footer {
 
 .footer-name {
   font-weight: 700;
-  color: #1f2937; // Un poco más oscuro para el nombre
+  color: #1f2937; 
   margin-bottom: 0.25rem;
 }
 
@@ -177,14 +201,14 @@ footer {
 
 .footer-socials {
   display: flex;
-  gap: 1rem; // Espacio entre iconos
+  gap: 1rem;
 }
 
 .footer-socials a {
   color: #6b7280;
   transition: color 0.2s;
   &:hover {
-    color: #1f2937; // Color al pasar el mouse
+    color: #1f2937; 
     text-decoration: none;
   }
 }
@@ -195,6 +219,12 @@ footer {
   margin-top: 1.5rem;
   font-size: 0.8rem;
 }
+
+/***
+
+end footer.html
+
+***/
 
 
 /***Estilos para el listado de posts**/
