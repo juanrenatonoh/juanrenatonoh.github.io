@@ -5,28 +5,38 @@ title: Inicio
 
 {% assign latest_post = site.posts.first %}
 <section class="featured-post">
+  
   <span class="section-label">Última publicación</span>
+  
   <article>
+    
     <h1 class="featured-title">
       <a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a>
     </h1>
+    
     <p class="featured-excerpt">
       {{ latest_post.excerpt | strip_html  }}
     </p>
+    
     <div class="post-meta">
       {{ latest_post.date | date: "%b %d, %Y" }} • 
       {% assign words = latest_post.content | number_of_words %}
       {{ words | divided_by: 200 | plus: 1 }} min de lectura
     </div>
+    
   </article>
+
 </section>
 
 <hr class="section-divider">
 
 <div class="posts-container">
+  
   <h2 class="section-label">Anteriores</h2>
+  
   <ul class="post-list">
     {% for post in site.posts offset:1 limit:5 %}
+    
     <li class="post-item">
       <a href="{{ post.url | relative_url }}" class="post-link">
         <span class="post-date">{{ post.date | date: "%d %b %Y" }}</span>
@@ -37,6 +47,8 @@ title: Inicio
         </span>
       </a>
     </li>
+    
     {% endfor %}
   </ul>
+
 </div>
