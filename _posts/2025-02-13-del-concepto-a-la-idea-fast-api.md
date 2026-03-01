@@ -79,6 +79,7 @@ Mi contexto fue el siguiente:
 Para este alcanzable, decidí manejar la información en memoria, lo que nos permite probar desde este punto.
 
 Con esto ya fue posible ver mis nuevos servicios en la documentación y realizar unas pruebas  
+
 ![][image3]
 
 ![][image4]
