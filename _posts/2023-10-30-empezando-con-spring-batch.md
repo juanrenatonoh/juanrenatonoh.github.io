@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Empezando con Spring Batch"
-date: 2024-03-30
+date: 2023-10-30
 author: Juan Renato Noh
 ---
 

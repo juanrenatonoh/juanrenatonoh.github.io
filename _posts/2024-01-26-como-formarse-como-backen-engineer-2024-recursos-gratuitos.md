@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cómo formarse como backend engineer 2024 (recursos gratuitos)"
-date: 2024-10-30
+date: 2024-01-26
 author: Juan Renato Noh
 ---
 
