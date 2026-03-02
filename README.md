@@ -1,6 +1,6 @@
-# Blog de Ingeniería Minimalista
+# Blog Minimalista
 
-Este repositorio contiene el código fuente de un blog de ingeniería enfocado en el minimalismo técnico y la alta legibilidad (diseño "CEO Tech"). La infraestructura está diseñada priorizando la estabilidad y evitando el ruido visual innecesario.
+Este repositorio contiene el código fuente de un blog minimalista con enfoque en la alta legibilidad (diseño "CEO Tech"). La infraestructura está diseñada priorizando la estabilidad y evitando el ruido visual innecesario.
 
 ## Tecnologías
 
