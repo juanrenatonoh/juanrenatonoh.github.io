@@ -148,12 +148,12 @@ init header.html
 
 ***/
 
-.jrn-main-header {
+.jrn-header {
   padding: 30px 0;
   border-bottom: 1px solid #f0f0f0;
 }
 
-.jrn-nav-container {
+.jrn-header-container {
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -161,7 +161,7 @@ init header.html
   margin: 0 auto;
 }
 
-.jrn-nav-logo {
+.jrn-header-logo {
   font-size: 1.25rem;
   font-weight: 700;
   color: #000 !important;
@@ -169,12 +169,12 @@ init header.html
   letter-spacing: -0.03em; 
 }
 
-.jrn-nav-links {
+.jrn-header-links {
   display: flex;
   gap: 2rem;
 }
 
-.jrn-nav-item {
+.jrn-header-item {
   font-size: 0.95rem;
   font-weight: 500;
   color: #666 !important;
@@ -190,27 +190,27 @@ init header.html
 
 @media (max-width: 600px) {
   
-  .jrn-nav-container {
+  .jrn-header-container {
     flex-direction: column; /* Apilamos logo arriba y links abajo */
     align-items: flex-start; /* Alineado a la izquierda para look limpio */
     gap: 15px;
   }
 
-  .jrn-nav-logo {
+  .jrn-header-logo {
     white-space: nowrap;    /* Evita que tu nombre se rompa en 3 líneas */
     font-size: 1.15rem;     /* Un poco más pequeño para que quepa bien */
     display: block;
     width: 100%;
   }
 
-  .jrn-nav-links {
+  .jrn-header-links {
     width: 100%;
     gap: 1rem;              /* Menos espacio entre links en móvil */
     justify-content: flex-start;
     padding-bottom: 5px;
   }
 
-  .jrn-nav-item {
+  .jrn-header-item {
     font-size: 0.85rem;     /* Texto más compacto */
   }
 
