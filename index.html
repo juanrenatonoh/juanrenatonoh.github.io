@@ -3,7 +3,8 @@ layout: default
 title: Inicio
 ---
 
-{% assign latest_post = site.posts.first %}
+{% if paginator.page == 1 %}
+{% assign latest_post = paginator.posts.first %}
 <section class="jrn-index-last-post">
   
   <span class="jrn-index-last-post-label">Última publicación</span>
@@ -29,13 +30,21 @@ title: Inicio
 </section>
 
 <hr class="jrn-index-last-post-meta-divider">
+{% endif %}
 
 <div class="jrn-index-post-container">
   
+  {% if paginator.page == 1 %}
   <h2 class="jrn-index-post-label">Anteriores</h2>
+  {% else %}
+  <h2 class="jrn-index-post-label">Publicaciones (Página {{ paginator.page }})</h2>
+  {% endif %}
   
   <ul class="jrn-index-post-list">
-    {% for post in site.posts offset:1 limit:5 %}
+    {% for post in paginator.posts %}
+    {% if paginator.page == 1 and forloop.first %}
+      {% continue %}
+    {% endif %}
     
     <li class="jrn-index-post-item">
       <a href="{{ post.url | relative_url }}" class="jrn-index-post-link">
@@ -50,5 +59,36 @@ title: Inicio
     
     {% endfor %}
   </ul>
+
+  <!-- Paginador -->
+  {% if paginator.total_pages > 1 %}
+  <div class="jrn-pagination">
+    
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="jrn-pagination-nav">Anterior</a>
+    {% else %}
+      <span class="jrn-pagination-nav disabled">Anterior</span>
+    {% endif %}
+
+    <div class="jrn-pagination-numbers">
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <span class="jrn-pagination-number current">{{ page }}</span>
+        {% elsif page == 1 %}
+          <a href="{{ '/' | relative_url }}" class="jrn-pagination-number">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="jrn-pagination-number">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="jrn-pagination-nav">Siguiente</a>
+    {% else %}
+      <span class="jrn-pagination-nav disabled">Siguiente</span>
+    {% endif %}
+
+  </div>
+  {% endif %}
 
 </div>

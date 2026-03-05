@@ -430,3 +430,93 @@ Init index.html
 End index.html
 ***/
 
+/* 
+====================
+Paginación
+==================== 
+*/
+.jrn-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Espacio entre los bloques principales: Anterior, [1 2 3], Siguiente */
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Contenedor central de los números */
+.jrn-pagination-numbers {
+  display: flex;
+  gap: 8px; /* Espacio mínimo asegurado entre cada número */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Todos los enlaces compartiran estructura base para ser estables */
+.jrn-pagination-nav,
+.jrn-pagination-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #666; /* Gris que usa el header */
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  min-height: 40px; /* Asegura un alto uniforme */
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #f5f5f5; /* Le da un toque suave como resalte sin ser pesado */
+  }
+}
+
+/* Los controles de anterior y siguiente, al ser texto más largo, padding lateral extra */
+.jrn-pagination-nav {
+  padding: 0 16px;
+  min-width: 100px; /* Obliga a que Anterior y Siguiente ocupen lo mismo */
+
+  &.disabled {
+    color: #ccc;
+    pointer-events: none;
+  }
+}
+
+/* Los numeritos, casi cuadrados */
+.jrn-pagination-number {
+  padding: 0 12px;
+  min-width: 40px; /* Base ancha mínima para el número "1" */
+  
+  &.current {
+    color: #000;
+    font-weight: 700;
+    background-color: transparent;
+    border-bottom: 2px solid #000; /* Elemento activo elegante del Minimal theme */
+    border-radius: 0;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .jrn-pagination {
+    gap: 10px;
+    flex-wrap: wrap; 
+  }
+  
+  .jrn-pagination-numbers {
+    width: 100%;
+    order: -1;
+    margin-bottom: 15px;
+  }
+
+  /* Ajuste a botones en mobile usando el 100% / 2 */
+  .jrn-pagination-nav {
+    flex: 1; /* Esto forzará que ambos ocupen lo mismo exacto! */
+    min-width: auto;
+    border: 1px solid #eaeaea; /* Hace que destaquen más en móvil como bloques touch */
+  }
+}
