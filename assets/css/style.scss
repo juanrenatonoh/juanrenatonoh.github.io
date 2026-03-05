@@ -118,15 +118,24 @@ Init "default" layout
 
 **/
 
-.wrapper {
+.jrn-default-body {
   padding-top: 0 !important;
 }
 
-.wrapper {
+.jrn-default-body {
   max-width: 800px !important; /* El estándar de lectura de blogs top */
   margin: 0 auto !important;
   padding: 0 20px !important;
 }
+
+@media (max-width: 600px) {
+  
+  .jrn-default-body {
+    padding: 0 15px !important;
+  }
+
+}
+
 
 /** 
 
