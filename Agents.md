@@ -10,7 +10,7 @@ Este archivo es la fuente de verdad para el mantenimiento del sitio. Priorizar e
 
 ## 2. Reglas de Mantenimiento (Pipeline)
 - **CSS Overrides:** Nunca editar los archivos del "theme" gema. Cualquier cambio de estilo debe ir al final de `style.scss` usando selectores específicos para ganar especificidad.
-- **Invisibilidad del "by":** El elemento `<p class="view">` debe permanecer oculto (`display: none !important`) para mantener el look de CEO Tech.
+- **Invisibilidad del "by":** El elemento `<p class="view">` debe permanecer oculto (`display: none !important`) para mantener el look de Minimal Tech.
 - **Liquid Logic:** Para la página de inicio, mantener siempre el filtro `offset: 1 limit: 10` para proteger el rendimiento del renderizado.
 
 ## 3. Protocolo de Nuevos Posts
