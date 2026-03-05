@@ -232,7 +232,7 @@ init footer.html
 
 ***/
 
-.site-footer {
+.jrn-footer {
   display: block;
   clear: both;
   padding: 40px 0;
@@ -240,35 +240,35 @@ init footer.html
   border-top: 1px solid #eaeaea; 
 }
 
-.footer-container {
+.jrn-footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.footer-bio {
+.jrn-footer-bio {
   display: flex;
   flex-direction: column;
 }
 
-.footer-name {
+.jrn-footer-name {
   font-weight: 700;
   color: #1f2937; 
   margin-bottom: 0.25rem;
 }
 
-.footer-tagline {
+.jrn-footer-tagline {
   margin: 0;
   font-size: 0.85rem;
 }
 
-.footer-socials {
+.jrn-footer-socials {
   display: flex;
   gap: 1rem;
 }
 
-.footer-socials a {
+.jrn-footer-socials a {
   color: #6b7280;
   transition: color 0.2s;
   &:hover {
@@ -277,7 +277,7 @@ init footer.html
   }
 }
 
-.footer-copyright {
+.jrn-footer-copyright {
   width: 100%;
   text-align: center;
   margin-top: 1.5rem;
