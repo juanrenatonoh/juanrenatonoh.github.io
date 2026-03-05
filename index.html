@@ -4,21 +4,21 @@ title: Inicio
 ---
 
 {% assign latest_post = site.posts.first %}
-<section class="featured-post">
+<section class="jrn-index-last-post">
   
-  <span class="section-label">Última publicación</span>
+  <span class="jrn-index-last-post-label">Última publicación</span>
   
   <article>
     
-    <h1 class="featured-title">
+    <h1 class="jrn-index-last-post-title">
       <a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a>
     </h1>
     
-    <p class="featured-excerpt">
+    <p class="jrn-index-last-post-excerpt">
       {{ latest_post.excerpt | strip_html  }}
     </p>
     
-    <div class="post-meta">
+    <div class="jrn-index-last-post-meta-meta">
       {{ latest_post.date | date: "%b %d, %Y" }} • 
       {% assign words = latest_post.content | number_of_words %}
       {{ words | divided_by: 200 | plus: 1 }} min de lectura
@@ -28,20 +28,20 @@ title: Inicio
 
 </section>
 
-<hr class="section-divider">
+<hr class="jrn-index-last-post-meta-divider">
 
-<div class="posts-container">
+<div class="jrn-index-post-container">
   
-  <h2 class="section-label">Anteriores</h2>
+  <h2 class="jrn-index-post-label">Anteriores</h2>
   
-  <ul class="post-list">
+  <ul class="jrn-index-post-list">
     {% for post in site.posts offset:1 limit:5 %}
     
-    <li class="post-item">
-      <a href="{{ post.url | relative_url }}" class="post-link">
-        <span class="post-date">{{ post.date | date: "%d %b %Y" }}</span>
-        <span class="post-title">{{ post.title }}</span>
-        <span class="post-reading-time">
+    <li class="jrn-index-post-item">
+      <a href="{{ post.url | relative_url }}" class="jrn-index-post-link">
+        <span class="jrn-index-post-date">{{ post.date | date: "%d %b %Y" }}</span>
+        <span class="jrn-index-post-title">{{ post.title }}</span>
+        <span class="jrn-index-post-reading-time">
           {% assign p_words = post.content | number_of_words %}
           {{ p_words | divided_by: 200 | plus: 1 }} min
         </span>

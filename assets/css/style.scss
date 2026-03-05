@@ -47,11 +47,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-.post-meta {
-  color: var(--light-gray);
-  font-size: 0.9rem;
-  font-weight: 500;
-}
+
 
 /**
 Code style
@@ -306,11 +302,11 @@ Init index.html
 
 ***/
 
-.featured-post {
+.jrn-index-last-post {
   padding: 40px 0;
 }
 
-.section-label {
+.jrn-index-last-post-label {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -320,7 +316,7 @@ Init index.html
   font-weight: 600;
 }
 
-.featured-title {
+.jrn-index-last-post-title {
   font-size: 2.2rem;
   margin: 10px 0;
   line-height: 1.1;
@@ -333,32 +329,38 @@ Init index.html
   }
 }
 
-.featured-excerpt {
+.jrn-index-last-post-excerpt {
   font-size: 1rem;
   color: #555;
   margin-bottom: 15px;
   line-height: 1.5;
 }
 
-.section-divider {
+.jrn-index-last-post-meta {
+  color: var(--light-gray);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.jrn-index-last-post-meta-divider {
   border: 0;
   height: 1px;
   background: #eee;
   margin: 20px 0;
 }
 
-.posts-container {
+.jrn-index-post-container {
   margin-top: 50px;
 }
 
 
-.post-list {
+.jrn-index-post-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.post-item {
+.jrn-index-post-item {
   border-bottom: 1px solid #f0f0f0;
   
   &:last-child {
@@ -366,7 +368,7 @@ Init index.html
   }
 }
 
-.post-link {
+.jrn-index-post-link {
   display: flex;
   align-items: baseline;
   padding: 15px 0;
@@ -379,21 +381,21 @@ Init index.html
   }
 }
 
-.post-date {
+.jrn-index-post-date {
   font-family: var(--code-font); /* La fuente JetBrains Mono que configuramos */
   font-size: 0.85rem;
   color: #999;
   min-width: 100px; /* Alineación perfecta de las fechas */
 }
 
-.post-title {
+.jrn-index-post-title {
   font-size: 1.1rem;
   font-weight: 500;
   color: #1a1a1a;
   flex-grow: 1;
 }
 
-.post-reading-time {
+.jrn-index-post-reading-time {
   font-size: 0.8rem;
   color: #ccc;
   font-weight: 400;
@@ -401,23 +403,23 @@ Init index.html
 
 
 @media (max-width: 600px) {
-  .featured-title {
+  .jrn-index-last-post-title {
     font-size: 1.6rem;
   }
-  .featured-excerpt {
+  .jrn-index-last-post-excerpt {
     font-size: 1rem;
   }
 }
 
 
 @media (max-width: 500px) {
-  .post-link {
+  .jrn-index-post-link {
     flex-direction: column;
     gap: 5px;
     padding: 20px 0;
   }
   
-  .post-date {
+  .jrn-index-post-date {
     font-size: 0.75rem;
   }
 }
