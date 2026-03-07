@@ -3,11 +3,16 @@ layout: default
 title: Inicio
 ---
 
-{% if paginator.page == 1 %}
+
+
 {% assign latest_post = paginator.posts.first %}
 <section class="jrn-index-last-post">
   
+  {% if paginator.page == 1 %}
   <span class="jrn-index-last-post-label">Última publicación</span>
+  {%else%}
+  <span class="jrn-index-last-post-label">Publicación sugerida</span>
+  {% endif %}
   
   <article>
     
@@ -30,14 +35,14 @@ title: Inicio
 </section>
 
 <hr class="jrn-index-last-post-meta-divider">
-{% endif %}
+
 
 <div class="jrn-index-post-container">
   
   {% if paginator.page == 1 %}
   <h2 class="jrn-index-post-label">Anteriores</h2>
   {% else %}
-  <h2 class="jrn-index-post-label">Publicaciones (Página {{ paginator.page }})</h2>
+  <h2 class="jrn-index-post-label">Página {{ paginator.page }}</h2>
   {% endif %}
   
   <ul class="jrn-index-post-list">
