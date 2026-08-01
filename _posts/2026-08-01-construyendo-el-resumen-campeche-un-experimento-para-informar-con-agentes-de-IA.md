@@ -5,98 +5,69 @@ date: 2026-08-01
 author: Juan Renato Noh
 ---
 
-## Cómo pasamos de una idea en un documento a un boletín que se publica solo todos los días
+![Portada El Resumen Campeche](data:image/png;base64,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)
 
-Todo buen proyecto comienza con una pregunta. En nuestro caso fue esta:
 
-> **¿Puede un sistema de agentes de inteligencia artificial reemplazar la rutina
-> editorial de un boletín de noticias local?**
 
-No era una pregunta teórica. La planteamos con los pies en la tierra: en Campeche, con
-medios locales, con información dispersa y con una audiencia que tiene poco tiempo. El
-resultado fue un **experimento** —un *Proof of Concept* (PoC)— que hoy publica un resumen
+Este proyecto comienzo con una pregunta.:
+
+ **¿Puede un sistema de agentes de inteligencia artificial realizar la rutina  editorial de un boletín de noticias local?**
+
+No era una pregunta teórica. La planteamos con los pies en la tierra: en Campeche, con medios locales, con información dispersa y permitir que la población la valide. El resultado fue un **experimento** —un *Proof of Concept* (PoC)— que hoy publica un resumen
 diario de noticias de forma completamente automática.
 
-Este artículo es la historia de cómo lo construimos: la idea, la especificación que la
-sostiene y los agentes y herramientas que hacen el trabajo pesado.
+Este artículo es la historia de cómo construimos: la idea, la especificación que la sostiene y los agentes y herramientas que hacen el trabajo .
 
----
+<!--more-->
 
-## El punto de partida: una hoja de ruta en un documento
+## El punto de partida: un PLAN 
 
-Nada de lo que hicimos fue improvisado. Antes de escribir una sola línea de código,
-definimos el proyecto en un documento de planificación: nuestro **Lean Canvas**. Ahí
-quedaron escritas las preguntas que todo experimento serio debe responder antes de
-construir nada:
-
+Nada de lo que hicimos fue improvisado. Antes de escribir una sola línea de código, definimos el proyecto en un documento de planificación: nuestra especificación , para este proyecto utilize  **Lean Canvas**. Ahí quedaron escritas las preguntas que todo experimento  debe responder antes de construir .
 - **¿Qué problema resolvemos?** La tesis es el formato corto se esta convirtiendo en preferencia ,por lo que presentar informacion en formato corta y resumida pueda ser una forma de evitar desinformación o acercarla a la población que no la consume . 
 - **¿A quién le hablamos?** Al ciudadano común
 - **¿Qué valor ofrecemos?** Información sintetizada y resumida por diferentes canales . 
 - **¿Cómo se sostiene?** Como todo buen experimento, al menor costo posible: de ser posible construccion y operación de 0 pesos . 
 
-Ese documento se convirtió en la **constitución del experimento**: cada decisión técnica
-posterior debía regresar a él. El objetivo nunca fue "hacer tecnología bonita", sino
-validar una hipótesis: *un boletín 100% automatizado puede generar valor.
+Ese documento se convirtió en la **constitución del experimento**: cada decisión técnica posterior debía regresar a él. El objetivo nunca fue "hacer tecnología bonita", sino validar una hipótesis: *un boletín 100% automatizado puede generar valor.
 
----
+Considero que este paso fue importante ya que hoy dia utilizamos herramientas Agenticas para construir software y el tener esas reglas y la visión por escrito facilita el proceso de desarrollo.
 
-## La segunda pieza: el editor invisible
 
-Si el Lean Canvas definió el **qué** y el **porqué**, hacía falta definir el **cómo**
-. Ahí nació la pieza más importante de todo el sistema: **el prompt maestro**.
 
-Piénsalo como el manual de estilo de un periódico, pero en forma de instrucciones para
-un Modelo de IA. En él quedaron escritas las reglas editoriales:
+## El editor Agentico
 
-- Buscar noticias publicadas estrictamente hoy, priorizando medios locales y fuentes
-  oficiales.
+Si el Lean Canvas definió el **qué** y el **porqué**, hacía falta definir el **cómo**. Ahí nació una pieza  importante de todo el sistema: **el prompt maestro**.
+
+Piénsalo como el manual de estilo de un periódico, pero en forma de instrucciones para un Modelo de IA. En él quedaron escritas las reglas editoriales:
+
+- Buscar noticias publicadas estrictamente hoy, priorizando medios locales y fuentes oficiales.
 - No inventar. No reutilizar noticias viejas. No caer en el sensacionalismo.
-- Seleccionar los 7 acontecimientos con mayor impacto, en secciones fijas:
-  Campeche, Seguridad, Nacional, Deportes y Clima.
-- Redactar cada noticia en una sola línea, de 8 a 15 palabras, para que el boletín
-  completo se lea en menos de un minuto.
+- Seleccionar los 7 acontecimientos con mayor impacto, en secciones fijas:Campeche, Seguridad, Nacional, Deportes y Clima.
+- Redactar cada noticia en una sola línea, de 8 a 15 palabras, para que el boletín completo se lea en menos de un minuto.
 
-Ese documento de texto es, en la práctica, el **Cerebro del producto**. La IA no "decide"
-qué es noticia por su cuenta: sigue las reglas que le dimos. Nosotros definimos la
-filosofía; ella ejecuta la redacción. Y la filosofía cabe en una frase:
+Ese documento de texto es, en la práctica, el **Cerebro del producto**. La IA no "decide" qué es noticia por su cuenta: sigue las reglas que le dimos. 
 
-> **"Primero informa, después permite profundizar."**
-
----
-
-
-### El redactor (Reporter Agent)
-Es el agente que escribe. Toma el prompt maestro, le inyecta la fecha de hoy y consulta al
-**Modelo IA**. La IA sale a buscar con
-herramientas de búsqueda integradas, selecciona lo relevante y redacta el boletín con el
-tono y formato que le indicamos.
+Con este prompt fue posible crear un Agente que que lo toma, le inyecta la fecha del dia y consulta al **Modelo**. El Agente sale a buscar con
+herramientas de búsqueda integradas, selecciona lo relevante y redacta el boletín con el tono y formato que le indicamos.
 
 ### El editor de distribución (Channel Publisher)
-El boletín ya está listo; ahora hay que publicarlo. Aquí actúa el segundo agente: un
-**orquestador de distribución** que entrega el contenido a cada canal registrado. Hoy
-publica en **Telegram** y en **Facebook**, y está diseñado para sumar nuevos canales
-(Instagram, Threads, X) con un simple cambio de configuración.
 
-### La plantilla: 
-La arquitectura del equipo editorial es modular: cada canal es un "publicador"
-independiente. Si mañana queremos publicar en una plataforma nueva, solo hay que añadir
-otro colaborador al equipo. El experimento crece sin reescribir lo ya construido.
+Una vez listo el boletín ya está listo; ahora hay que publicarlo. Aquí actúa el segundo componente del Flujo de Trabajo : un **orquestador de distribución** que entrega el contenido a cada canal registrado. Hoy publica en **Telegram** y en **Facebook**, y está diseñado para sumar nuevos canales (Por ejempl oInstagram, Threads, X) con un simple cambio de configuración.
+
+La arquitectura del equipo editorial es modular: cada canal es un "publicador" independiente. Si mañana queremos publicar en una plataforma nueva, solo hay que añadir otro colaborador al equipo. El experimento crece sin reescribir lo ya construido.
 
 ---
 
 ## Qué estamos validando con este experimento
 
-Un PoC no se construye para quedarse en el código: se construye para aprender. Nuestras
-preguntas de validación son:
+Un PoC no se construye para quedarse en el código: se construye para aprender. Nuestras preguntas de validación son:
 
-1. **¿La IA puede mantener un estándar editorial consistente** a lo largo de semanas y
-   meses, sin que la calidad se degrade?
-2. **¿La audiencia realmente adopta el hábito de informarse** con un resumen de un minuto?
-3. **¿El modelo de costo cero es sostenible** en el tiempo y puede escalar a más canales , video , fotos
+1. **¿El Agente  puede mantener un estándar editorial consistente** a lo largo de semanas y meses, sin que la calidad se degrade?
+2. **¿La audiencia realmente adopta el hábito de informarse** con un resumen de un minuto?.
+3. **¿El modelo de costo cero es sostenible** en el tiempo ? y puede escalar a más canales .
+4. **¿Cuales son los retos tecnicos ?** Escalabilidad , Dependencia con Proveedores de los Modelos .  
 
-Cada día de publicación es una medición. Cada interacción en Telegram o Facebook es un
-dato. La idea es simple: **si el experimento funciona, lo convertimos en producto. Si no,
-aprendimos y ajustamos.**
+La idea es simple: **si el experimento funciona podemos seguir escalando, si no ajustamos y tenemos lecciones aprendidas.**
 
 ---
 
@@ -106,8 +77,7 @@ Esto es apenas la primera iteración. Donde el agente se encuentra publicando en
 
 Aun no sabemos si tendra mas iteraciones pero si te interesa verlo funcionando o consumir la información te invito :
 
-- **Telegram** → [https://t.me/elresumencampeche](https://t.me/elresumencampeche) y
-  recibe el resumen cada mañana en menos de un minuto.
+- **Telegram** → [https://t.me/elresumencampeche](https://t.me/elresumencampeche) y recibe el resumen cada mañana en menos de un minuto.
 - **Facebook** → [https://www.facebook.com/elresumencampeche](https://www.facebook.com/elresumencampeche).
 
 Si te es interesante 
