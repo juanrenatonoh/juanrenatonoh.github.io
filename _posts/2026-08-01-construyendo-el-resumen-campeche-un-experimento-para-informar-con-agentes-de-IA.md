@@ -50,9 +50,9 @@ Ese documento de texto es, en la práctica, el **Cerebro del producto**. La IA n
 Con este prompt fue posible crear un Agente que que lo toma, le inyecta la fecha del dia y consulta al **Modelo**. El Agente sale a buscar con
 herramientas de búsqueda integradas, selecciona lo relevante y redacta el boletín con el tono y formato que le indicamos.
 
-### El editor de distribución (Channel Publisher)
+### Distribución del contenido (Channel Publisher)
 
-Una vez listo el boletín ya está listo; ahora hay que publicarlo. Aquí actúa el segundo componente del Flujo de Trabajo : un **orquestador de distribución** que entrega el contenido a cada canal registrado. Hoy publica en **Telegram** y en **Facebook**, y está diseñado para sumar nuevos canales (Por ejempl oInstagram, Threads, X) con un simple cambio de configuración.
+Una vez listo el boletín ; ahora hay que publicarlo. Aquí actúa el segundo componente del Flujo de Trabajo : un **orquestador de distribución** que entrega el contenido a cada canal registrado. Hoy publica en **Telegram** y en **Facebook**, y está diseñado para sumar nuevos canales (Por ejempl oInstagram, Threads, X) con un simple cambio de configuración.
 
 La arquitectura del equipo editorial es modular: cada canal es un "publicador" independiente. Si mañana queremos publicar en una plataforma nueva, solo hay que añadir otro colaborador al equipo. El experimento crece sin reescribir lo ya construido.
 
