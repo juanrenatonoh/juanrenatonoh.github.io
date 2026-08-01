@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Construyendo "El Resumen Campeche": un experimento para informar con agentes de IA
-date: 2026-07-01
+title: "Construyendo El Resumen Campeche : un experimento para informar con agentes de IA"
+date: 2026-08-01
 author: Juan Renato Noh
 ---
 
