@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Construyendo El Resumen Campeche : un experimento para informar con agentes de IA"
+title: La IA no es predecible... pero tu proceso de desarrollo puede serlo
 date: 2026-08-27
 author: Juan Renato Noh
 ---
-
-# La IA no es predecible... pero tu proceso de desarrollo puede serlo
 
 Al trabajar en sistemas críticos del sector financiero y en especial en aquellos que se encuentran en producción es necesario contar con un control riguroso y un plan de mitigación de riesgos. Sin embargo, en esta era de la inteligencia artificial, debemos considerar que tanto las soluciones que diseñamos como las herramientas de IA que adoptamos para el desarrollo tienen la característica de no ser deterministas.
 
@@ -14,6 +12,8 @@ Este planteamiento me lleva a las siguientes  preguntas :
 * ¿Hay forma de mitigar el comportamiento probabilístico de los modelos de IA?  
 * ¿Es viable en los flujos de desarrollo?  
 * ¿Cómo líder técnico o arquitecto, qué estrategia puedo aplicar para mis procesos de desarrollo asistidos por IA?
+
+<!--more-->
 
 ## ¿Hay forma de mitigar el comportamiento probabilístico de los modelos de IA?
 
