@@ -1,9 +1,7 @@
 ---
-title: "Por qué usamos Markdown cuando trabajamos con IA"
-date: 2026-10-17 12:00:00 +0000
+title: Por qué usamos Markdown cuando trabajamos con IA
+date: 2026-10-17
 layout: post
-categories: [ia]
-tags: [markdown, ia, prácticas]
 ---
 
 Esta semana, mientras trabajaba en mis flujos con IA, me detuve a cuestionar algo que hasta ahora había dado por sentado: ¿por qué usamos archivos Markdown (`.md`)?
