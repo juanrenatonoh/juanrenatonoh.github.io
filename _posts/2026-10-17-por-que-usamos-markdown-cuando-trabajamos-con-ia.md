@@ -13,6 +13,8 @@ Antes de cuestionar a los demás, decidí cuestionarme a mí mismo: ¿qué valor
 
 Al reflexionar, recordé conceptos que había leído y las 4D del framework de Anthropic. Particularmente, la idea de que, si queremos delegar trabajo a un agente, primero debemos **describirlo de manera clara y precisa**.
 
+<!--more-->
+
 Aquí encontré mi primer punto: necesitamos hacer explícitos el objetivo, el contexto, las restricciones y los resultados esperados. Los archivos Markdown pueden ayudarnos a organizar y comunicar esa información tanto a las personas como a los agentes.
 
 Pero hay un segundo punto que me parece todavía más interesante.
